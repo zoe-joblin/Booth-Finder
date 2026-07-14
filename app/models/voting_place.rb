@@ -19,10 +19,10 @@ class VotingPlace < ApplicationRecord
   scope :venue_type, ->(venue_type) { where(venue_type: venue_type) if venue_type.present? }
 
   def full_address
-    [address_line_1, address_line_2, suburb&.name, city, postcode].compact.join(", ")
+    [ address_line_1, address_line_2, suburb&.name, city, postcode ].compact.join(", ")
   end
 
   def source_info
-    [source_dataset, source_id].compact.join("/")
+    [ source_dataset, source_id ].compact.join("/")
   end
 end

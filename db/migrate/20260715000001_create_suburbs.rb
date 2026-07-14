@@ -8,7 +8,7 @@ class CreateSuburbs < ActiveRecord::Migration[8.1]
       t.timestamps
     end
 
-    add_index :suburbs, [:name, :city], unique: true
+    add_index :suburbs, [ :name, :city ], unique: true
     add_index :suburbs, :postcode
   end
 end

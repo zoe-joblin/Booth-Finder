@@ -45,3 +45,17 @@ A typical flow will be:
 ## Current status
 
 The project already includes the core database structure for suburbs and voting places. The next step is to add the public-facing search and display experience for election use.
+
+## Running tests
+
+To run the full test suite:
+
+```bash
+bin/rails test
+```
+
+To run a specifc test file:
+
+```bash
+bin/rails test {file_path}
+```

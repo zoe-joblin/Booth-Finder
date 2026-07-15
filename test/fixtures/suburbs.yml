@@ -1,0 +1,11 @@
+one:
+  name: Kelburn
+  city: Wellington
+  postcode: 6012
+  region: Wellington
+
+two:
+  name: Newtown
+  city: Wellington
+  postcode: 6021
+  region: Wellington
